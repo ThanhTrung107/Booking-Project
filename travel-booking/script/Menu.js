@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 // 1️⃣ Hàm khởi tạo slider ảnh
 function initSlider() {
-    const images = ["/travel-booking/anh/AnhLogin.jpg", "/travel-booking/anh/slide1.jpg", "/travel-booking/anh/slide2.jpg"];
+    const images = ["/travel-booking/images/AnhLogin.jpg", "/travel-booking/images/slide1.jpg", "/travel-booking/images/slide2.jpg"];
     let index = 0;
     const slideImg = document.getElementById("slide-img");
 
@@ -164,6 +164,6 @@ document.addEventListener("DOMContentLoaded", function () {
         return;
     }
 
-    dropdown.style.display ="none";
+    dropdown.style.display = "none";
 });
 document.addEventListener("DOMContentLoaded", initSlider);

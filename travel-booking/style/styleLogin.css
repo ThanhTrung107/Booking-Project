@@ -1,7 +1,7 @@
 /* Nền Gradient */
 body {
     font-family: 'Arial', sans-serif;
-    background: url('/travel-booking/anh/AnhLogin.jpg') no-repeat center center/cover;
+    background: url('/travel-booking/images/AnhLogin.jpg') no-repeat center center/cover;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -21,12 +21,15 @@ body {
     min-height: 400px;
     transition: height 0.3s ease-in-out;
 }
+
 /* Phần form đăng nhập */
 .login-box {
     flex: 1;
     padding: 20px;
 }
-.login-box, .form-box {
+
+.login-box,
+.form-box {
     width: 100%;
 }
 
@@ -81,7 +84,10 @@ h2 {
 }
 
 /* Liên kết Forgot Password & Signup */
-.forgot, .signup, .btn, .back-to-login {
+.forgot,
+.signup,
+.btn,
+.back-to-login {
     display: block;
     margin-top: 10px;
     font-size: 14px;
@@ -93,9 +99,11 @@ h2 {
     font-weight: bold;
 }
 
-.forgot:hover, .signup:hover {
+.forgot:hover,
+.signup:hover {
     text-decoration: underline;
 }
+
 /*ẩn sighup*/
 
 /*Logo*/
@@ -104,6 +112,7 @@ h2 {
     margin: 0 auto 20px auto;
     display: block;
 }
+
 /*Back*/
 .btn {
     padding: 8px 10px;
