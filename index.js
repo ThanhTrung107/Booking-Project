@@ -19,13 +19,13 @@ app.use(methodOverride("_method"));
 app.use(cookieParser());
 app.use(bodyParser.urlencoded({ extended: true }));
 const port = process.env.PORT;
-const RouterApiAdmin = require("./API/V1/routes/admin/index");
-const RouterApiClient = require("./API/V1/routes/client/index");
+const RouterApiAdmin = require("./api/v1/routes/admin/index");
+const RouterApiClient = require("./api/v1/routes/client/index");
 
 // Serve static files
-app.use('/TravelBooking', express.static(path.join(__dirname, 'TravelBooking')));
+app.use('/travel-booking', express.static(path.join(__dirname, 'travel-booking')));
 
-app.set('views', path.join(__dirname, 'TravelBooking/views'));
+app.set('views', path.join(__dirname, 'travel-booking/views'));
 
 RouterApiAdmin(app);
 RouterApiClient(app);
